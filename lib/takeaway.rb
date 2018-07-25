@@ -1,6 +1,8 @@
+require 'order'
+
 class Takeaway
 
-  def initialize(menu:, order: nil )
+  def initialize(menu:, order: nil)
     @menu = menu
     @order = order || Order.new
   end
